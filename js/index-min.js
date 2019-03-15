@@ -1,5 +1,7 @@
 var $ = jQuery;
 $(document).ready(function () {
+
+
   $(window).scroll(function () {
     var distanceScrolled = $(this).scrollTop();
     if (distanceScrolled > 90 || $("#mobile-menu").hasClass('open')) {
@@ -81,7 +83,7 @@ $(document).ready(function () {
   //     }
   //   }, 750)
   // })
-  // $('#contact-form').on('submit', function () {
+  // $('#rsvp-form').on('submit', function () {
   //   $(this).css('opacity', 0);
   //   $('#form-submitted').css('opacity', 1)
   // })
