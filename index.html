@@ -67,11 +67,10 @@
         var submitted = false;
       </script>
       <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location = window.location.href;}"></iframe>
-      <form class="col s12"  method="post" target="hidden_iframe" onsubmit="submitted=true;" id='contact-form'>
-        <!-- action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScr_zinpQ_tHlp6vczM6lRypvtrv9X4loklkZEpTEBUubB3YQ/formResponse" -->
+      <form class="col s12"  method="post" target="hidden_iframe" onsubmit="submitted=true;" id='rsvp-form' action="https://docs.google.com/forms/d/e/1FAIpQLSefcKOjyAvoeBpO9lnLXtISGeln6ZALPH-jSgY13SNkplv4wg/formResponse" >
         <div class="row">
           <div class="input-field col s12">
-            <input id="name" type="text" name='entry.2005620554' required>
+            <input id="name" type="text" name='entry.1615164898' required>
             <label for="name">First & Last Name</label>
           </div>
         </div>
@@ -81,13 +80,13 @@
             <div>
               <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input class="with-gap" name="entry.877086558" type="radio" value="Yes" required/>
                     <span>Yes</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input class="with-gap" name="entry.877086558" type="radio" value="No" required/>
                     <span>No</span>
                   </label>
                 </p>
@@ -96,7 +95,7 @@
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input id="totalCount" type="text" name='entry.2005620554' required>
+            <input id="totalCount" type="text" name='entry.1231954778' required>
             <label for="totalCount">Total Number Attending</label>
           </div>
         </div>

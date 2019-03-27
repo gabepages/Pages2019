@@ -56,10 +56,10 @@ $(document).ready(function () {
       $(".menu.open").removeClass("open").addClass("closed");
     }
   });
-  // $('#rsvp-form').on('submit', function () {
-  //   $(this).css('opacity', 0);
-  //   $('#form-submitted').css('opacity', 1)
-  // })
+  $('#rsvp-form').on('submit', function () {
+    $(this).css('opacity', 0);
+    $('#form-submitted').css('opacity', 1)
+  })
   // $('.modal').modal({
   //   opacity: .6,
   //   inDuration: 400,
