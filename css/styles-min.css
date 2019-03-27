@@ -117,14 +117,69 @@ a.card:focus::after {
   height: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.menu.open {
+  height: 100vh;
+  background: #697061;
 }
 
 .menu-button {
   color: white;
   font-family: 'Josefin Slab', serif;
   font-size: 20px;
+  margin-top: 10px;
+}
+
+.menu .menu-content {
+  position:fixed;
+  top:60px;
+  left:-100%;
+  bottom:0;
+  right:100%;
+  opacity:0;
+  transition:all 0.375s cubic-bezier(0.4, 0, 1, 1);
+  padding:0;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.menu.open .menu-content {
+  left:0;
+  right:0;
+  opacity:1;
+}
+
+.menu-content li {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.menu-content li:first-of-type {
+  border-top: 2px solid rgba(0,0,0,0.2);
+}
+
+.menu-content a {
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-content a:hover::after,
+.menu-content a:focus::after {
+  opacity: 0;
 }
 
 section.row {
@@ -193,6 +248,12 @@ header .header-content span{
   width: 50px;
   margin: 20px auto;
   display: block;
+}
+
+@media screen and (max-width: 345px) {
+  header {
+    height: 90vh;
+  }
 }
 
 /* MAIN INFO */
@@ -289,9 +350,116 @@ form p {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: 0.25s all ease-in;
+}
+
+.card:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-2px);
 }
 
 .card img {
   width: 70%;
   height: auto;
+}
+
+/* BRIDAL PARTY SECTION */
+.bridal-party-section {
+  text-align: center;
+}
+
+.bridal-party-section h2 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.bridal-party-section .image-block {
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto 60px;
+}
+
+.bridal-party-section .image-block img{
+  height: 250px;
+  width:250px;
+}
+
+.bridal-party-section .image-block .text-block{
+  position: absolute;
+  top: 75%;
+  padding: 15px 10px;
+  margin: 0;
+  font-size: 18px;
+  width: 180px;
+}
+
+.bridal-party-section .girls .image-block .text-block {
+  background: #E9BBB7;
+  left: 45%;
+  border-left: 5px solid white;
+  border-top: 5px solid white;
+}
+
+.bridal-party-section .boys .image-block .text-block {
+  background: #737D89;
+  color: white;
+  right: 45%;
+  border-right: 6px solid white;
+  border-top: 6px solid white;
+}
+.bridal-party-section .image-block .text-block span{
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 790px) {
+
+  .bridal-party-section .girls .image-block {
+    text-align: left;
+    margin: 0 auto 60px 0;
+  }
+  .bridal-party-section .boys .image-block {
+    text-align: right;
+    margin: 0 0 60px auto;
+  }
+
+  .bridal-party-section .girls .image-block .text-block {
+    left: 30%;
+    text-align: center;
+  }
+
+  .bridal-party-section .boys .image-block .text-block {
+    right: 30%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bridal-party-section .girls .image-block, .bridal-party-section .boys .image-block {
+    text-align: center;
+    margin: 0 auto 60px;
+  }
+
+  .bridal-party-section .image-block .text-block {
+    top: 78%;
+  }
+
+  .bridal-party-section .girls .image-block .text-block {
+    left: 40%;
+  }
+
+  .bridal-party-section .boys .image-block .text-block {
+    right: 40%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .bridal-party-section .girls .image-block .text-block {
+    left: 35%;
+  }
+
+  .bridal-party-section .boys .image-block .text-block {
+    right: 35%;
+  }
 }

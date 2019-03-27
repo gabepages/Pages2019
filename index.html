@@ -16,8 +16,14 @@
 </head>
 
 <body>
-  <div class="menu">
+  <div class="menu closed">
       <span class="menu-button">Menu</span>
+      <ul class="menu-content">
+          <li><a href="#wedding-info" class="nav-list-item scroll-tag">Wedding Info</a></li>
+          <li><a href="#rsvp" class="nav-list-item scroll-tag">RSVP</a></li>
+          <li><a href="#registry" class="nav-list-item scroll-tag">Registry</a></li>
+          <li><a href="#bridal-party" class="nav-list-item scroll-tag">Bridal Party</a></li>
+        </ul>
   </div>
   <header>
     <div class="header-content">
@@ -32,6 +38,7 @@
 
     <!-- MAIN INFO SECTION -->
     <section class="row center-align main-info">
+        <a name="wedding-info"></a>
         <div class="col m6 s12">
           <button>RSVP</button>
           <p>We are so excited to be able to share this special day with you! We will be having our wedding at Sunken Gardens in St. Petersburg, FL on June 1, 2019. Our ceremony will begin promtly at 5:30 p.m but we would like to invite you to come early to enjoy the beatiful gardens. Please note when choosing your attire that the ceremony will be held in a grassy area.</p>
@@ -54,6 +61,7 @@
 
     <!-- RSVP SECTION -->
     <section class="row center-align rsvp-section">
+      <a name="rsvp"></a>
       <h2>RSVP</h2>
       <script type="text/javascript">
         var submitted = false;
@@ -109,20 +117,21 @@
 
     <!-- REGISTRY SECTION -->
     <section class="row center-align registry-section">
+      <a name="registry"></a>
       <h2>Registry</h2>
       <div class="row">
         <div class="col s12 m4 ceter-aligned">
-          <a href="https://www.amazon.com/wedding/gabe-pages-lauren-mcdougall-st-petersburg-june-2019/registry/3MF3N33XN1NJ4" target="_blank" class="card hoverable">
+          <a href="https://www.amazon.com/wedding/gabe-pages-lauren-mcdougall-st-petersburg-june-2019/registry/3MF3N33XN1NJ4" target="_blank" class="card">
             <img src="images/amazon-logo-2.png" alt="">
           </a>
         </div>
         <div class="col s12 m4 ceter-aligned">
-          <a href="https://www.target.com/gift-registry/giftgiver?registryId=5459e97fc4a149cea6c3b9c206a6d7b7" target="_blank" class="card hoverable">
+          <a href="https://www.target.com/gift-registry/giftgiver?registryId=5459e97fc4a149cea6c3b9c206a6d7b7" target="_blank" class="card">
             <img src="images/target-logo-3.png" alt="">
           </a>
         </div>
         <div class="col s12 m4 ceter-aligned">
-            <a href="https://www.honeyfund.com/wedding/FlippingThePages2019" target="_blank" class="card hoverable">
+            <a href="https://www.honeyfund.com/wedding/FlippingThePages2019" target="_blank" class="card">
               <img src="images/honeyfund-logo.png" alt="">
             </a>
           </div>
@@ -132,8 +141,69 @@
     <div class="divider"></div>
 
     <!-- BRIDAL PARTY SECTION -->
-    <section class="row center-align bridal-party-section">
+    <section class="row bridal-party-section">
+      <a name="bridal-party"></a>
       <h2>Bridal Party</h2>
+      <div class="col s12 m6 girls">
+        <!-- MADDIE -->
+        <div class="image-block">
+          <img src="images/people/maddie.jpeg"  alt="">
+          <p class="text-block">
+            <span>Maid of Honor</span><br>Maddie Fabian
+          </p>
+        </div>
+        <!-- EMILY -->
+        <div class="image-block">
+          <img src="images/people/emily.jpeg"  alt="">
+          <p class="text-block">
+            <span>Bridesmaid</span><br>Emily Netjes
+          </p>
+        </div>
+        <!-- SAM -->
+        <div class="image-block">
+          <img src="images/people/sam.jpeg"  alt="">
+          <p class="text-block">
+            <span>Bridesmaid</span><br>Sam Reddett
+          </p>
+        </div>
+        <!-- SAM -->
+        <div class="image-block">
+          <img src="images/people/hunter.jpeg"  alt="">
+          <p class="text-block">
+            <span>Bridesmaid</span><br>Hunter Medero
+          </p>
+        </div>
+      </div>
+      <div class="col s12 m6 boys">
+        <!-- JOE -->
+        <div class="image-block">
+          <img src="images/people/joe.jpeg" alt="">
+          <p class="text-block">
+            <span>Best Man</span><br>Joe Rocca
+          </p>
+        </div>
+        <!-- DINO -->
+        <div class="image-block">
+          <img src="images/people/dino.jpeg" alt="">
+          <p class="text-block">
+            <span>Best Man</span><br>Dino Mirasola
+          </p>
+        </div>
+        <!-- GIO -->
+        <div class="image-block">
+          <img src="images/people/gio.jpeg" alt="">
+          <p class="text-block">
+            <span>Groomsman</span><br>Giovanni Figueruelo
+          </p>
+        </div>
+        <!-- GAVIN -->
+        <div class="image-block">
+          <img src="images/people/gavin.jpeg" alt="">
+          <p class="text-block">
+            <span>Groomsman</span><br>Gavin Figueruelo
+          </p>
+        </div>
+      </div>
     </section>
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
